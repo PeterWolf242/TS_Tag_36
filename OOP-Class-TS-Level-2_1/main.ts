@@ -62,8 +62,11 @@ console.log("Class 3: ", class_3.name);
 class_1.name = "Advanced Mathematics";
 class_2.name = "middle ages";
 
-class_1.personArray.push(1,"Klaus", "Huber", "1996-05-17"
-	)
+const newPerson = new Person(1, "Klaus", "Huber", "1996-05-17");
+
+class_1.personArray.push(newPerson);
+
+console.log("Neue Klasse 1: ", class_1);
 
 console.log("New Name of Class 1: ", class_1.name);
 console.log("New Name of Class 2: ", class_2.name);
